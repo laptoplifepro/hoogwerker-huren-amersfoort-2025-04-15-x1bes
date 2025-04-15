@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="nl" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="nl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoogwerker Huren Amersfoort - Professionele Verhuurservice</title>
     <meta name="description" content="Verhuur van hoogwerkers in Amersfoort. Professionele service, scherpe prijzen en direct beschikbaar.">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans antialiased text-gray-900 bg-white">
@@ -13,32 +22,30 @@
     <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50" x-data="{ isOpen: false }">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-blue-600">
+                <a href="https://laptoplifepro.github.io/hoogwerker-huren-amersfoort-2025-04-15-x1bes" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">
                     Hoogwerker Huren
                 </a>
                 
-                <!-- Mobile menu button -->
-                <button @click="isOpen = !isOpen" class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
+                <button class="mobile-menu-button md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
 
-                <!-- Desktop menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#diensten" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Diensten</a>
-                    <a href="#voordelen" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Voordelen</a>
-                    <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
-                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
+                    <a href="#diensten" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 hover:scale-105">Diensten</a>
+                    <a href="#voordelen" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 hover:scale-105">Voordelen</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 hover:scale-105">Testimonials</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 hover:scale-105">Over Ons</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 hover:scale-105">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 hover:scale-105">Contact</a>
                 </div>
             </div>
 
-            <!-- Mobile menu -->
-            <div x-show="isOpen" class="md:hidden mt-4" @click.away="isOpen = false">
+            <div class="mobile-menu hidden md:hidden mt-4">
                 <div class="flex flex-col space-y-4 py-4">
                     <a href="#diensten" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Diensten</a>
                     <a href="#voordelen" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Voordelen</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Over Ons</a>
                     <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
                 </div>
@@ -47,17 +54,17 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-24 bg-gradient-to-br from-blue-50 to-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="pt-32 pb-24 bg-gradient-to-br from-blue-50 to-white" style="background-image: url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 bg-white/90 rounded-xl p-8">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-8">
-                    Hoogwerker Huren in Amersfoort
+                    Professionele Hoogwerker Verhuur in Amersfoort
                 </h1>
-                <p class="text-xl sm:text-2xl text-gray-600 mb-12 leading-relaxed">
-                    Professionele hoogwerkers voor elk project. Snel, betrouwbaar en tegen scherpe prijzen.
+                <p class="text-xl sm:text-2xl text-gray-700 mb-12 leading-relaxed">
+                    Bereik nieuwe hoogtes met onze moderne hoogwerkers. Veilig, betrouwbaar en direct beschikbaar voor elk project. Tot 25 meter werkhoogte beschikbaar.
                 </p>
-                <a href="https://hoogwerkerhurenamersfoort.nl" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                    Direct Huren
+                <a href="https://hoogwerkerhurenamersfoort.nl" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    Direct Een Hoogwerker Huren
                 </a>
             </div>
         </div>
@@ -66,18 +73,37 @@
     <!-- Features Section -->
     <section id="diensten" class="py-24 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Onze Diensten</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Onze Verhuurservice</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-102 hover:bg-blue-50">
                     <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Flexibele Verhuur</h3>
-                    <p class="text-gray-600">Huur per dag, week of langere periode volgens uw specifieke projectbehoeften.</p>
+                    <h3 class="text-xl font-semibold mb-4">Flexibele Verhuurperiodes</h3>
+                    <p class="text-gray-600">Van daghuur tot langetermijncontracten. Wij passen ons aan aan uw projectplanning met transparante prijzen en snelle service.</p>
                 </div>
-                <!-- More feature cards... -->
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-102 hover:bg-blue-50">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Gecertificeerde Veiligheid</h3>
+                    <p class="text-gray-600">Al onze hoogwerkers zijn TÜV-gecertificeerd en worden regelmatig gekeurd. Inclusief uitgebreide veiligheidsinstructies en verzekering.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-102 hover:bg-blue-50">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">24/7 Support</h3>
+                    <p class="text-gray-600">Technische ondersteuning en service wanneer u het nodig heeft. Snelle responstijd en professionele hulp bij storingen.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -87,7 +113,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Waarom Voor Ons Kiezen?</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="flex items-start space-x-4">
+                <div class="flex items-start space-x-4 hover:scale-105 transition-transform duration-300">
                     <div class="flex-shrink-0">
                         <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                             <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,11 +122,107 @@
                         </div>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-2">Professionele Service</h3>
-                        <p class="text-gray-600">24/7 ondersteuning en deskundig advies voor al uw projecten.</p>
+                        <h3 class="text-xl font-semibold mb-2">Uitgebreide Vloot</h3>
+                        <p class="text-gray-600">Van schaarliften tot telescoophoogwerkers, wij hebben voor elke klus de juiste machine. Werkhoogtes van 6 tot 25 meter beschikbaar.</p>
                     </div>
                 </div>
-                <!-- More benefit items... -->
+
+                <div class="flex items-start space-x-4 hover:scale-105 transition-transform duration-300">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Scherpe Prijzen</h3>
+                        <p class="text-gray-600">Transparante tarieven zonder verborgen kosten. Vraag een vrijblijvende offerte aan en profiteer van onze volumekortingen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Wat Onze Klanten Zeggen</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Uitstekende service! De hoogwerker was op tijd geleverd en in perfecte staat. Het team was zeer behulpzaam bij het uitleggen van de bediening."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold">Jan de Vries</p>
+                        <p class="text-gray-500">Projectmanager, BouwBedrijf XYZ</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Al jaren een tevreden klant. De flexibiliteit in verhuurperiodes en de 24/7 support maken het verschil voor ons bedrijf."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold">Lisa Jansen</p>
+                        <p class="text-gray-500">Eigenaar, Schildersbedrijf Jansen</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Zeer professionele aanpak en goede prijs-kwaliteitverhouding. De technische ondersteuning is top!"</p>
+                    <div class="text-sm">
+                        <p class="font-semibold">Peter Bakker</p>
+                        <p class="text-gray-500">Technisch Manager, InstallatiePro</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Betrouwbare partner voor al onze hoogwerker behoeften. Snelle levering en uitstekende klantenservice."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold">Mark van Dijk</p>
+                        <p class="text-gray-500">Directeur, GlasService Nederland</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Over Ons</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Opgericht in 2010, zijn wij uitgegroeid tot de toonaangevende specialist in hoogwerkerverhuur in de regio Amersfoort. Wat begon als een familiebedrijf met drie hoogwerkers is nu uitgegroeid tot een modern verhuurbedrijf met een uitgebreide vloot van meer dan 50 machines.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Onze missie is om klanten de beste en veiligste toegang tot hoogte te bieden, ondersteund door expertise en persoonlijke service. We geloven in duurzaamheid, veiligheid en klanttevredenheid als onze kernwaarden, en investeren continu in de nieuwste technologieën en veiligheidsstandaarden.
+                </p>
             </div>
         </div>
     </section>
@@ -110,18 +232,65 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Veelgestelde Vragen</h2>
             <div class="max-w-3xl mx-auto space-y-6" x-data="{selected:null}">
-                <div class="border rounded-lg">
-                    <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full p-4 text-left font-semibold flex justify-between items-center">
-                        <span>Wat zijn de huurvoorwaarden?</span>
+                <div class="border rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full p-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50">
+                        <span>Wat zijn de huurvoorwaarden en betalingsmogelijkheden?</span>
                         <svg class="w-6 h-6 transform transition-transform duration-300" :class="{'rotate-180': selected == 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                         </svg>
                     </button>
-                    <div x-show="selected == 1" class="p-4 pt-0">
-                        <p class="text-gray-600">Onze huurvoorwaarden zijn flexibel en worden aangepast aan uw specifieke behoeften.</p>
+                    <div x-show="selected == 1" class="p-4 pt-0 text-gray-600">
+                        <p>We bieden flexibele huurperiodes vanaf één dag. Betaling kan via factuur (voor zakelijke klanten) of direct via pin/contactloos. Een geldig legitimatiebewijs en aanbetaling zijn vereist. Verzekering is inclusief in de huurprijs.</p>
                     </div>
                 </div>
-                <!-- More FAQ items... -->
+
+                <div class="border rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <button @click="selected !== 2 ? selected = 2 : selected = null" class="w-full p-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50">
+                        <span>Is er een certificaat nodig om een hoogwerker te bedienen?</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" :class="{'rotate-180': selected == 2}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div x-show="selected == 2" class="p-4 pt-0 text-gray-600">
+                        <p>Ja, voor het bedienen van een hoogwerker is een geldig certificaat verplicht. Wij bieden ook mogelijkheden voor certificering via onze partners.</p>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <button @click="selected !== 3 ? selected = 3 : selected = null" class="w-full p-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50">
+                        <span>Wat gebeurt er bij een technische storing?</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" :class="{'rotate-180': selected == 3}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div x-show="selected == 3" class="p-4 pt-0 text-gray-600">
+                        <p>Onze 24/7 technische dienst staat voor u klaar. Bij storingen zijn we binnen 2 uur ter plaatse en indien nodig wordt direct een vervangende machine geleverd.</p>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <button @click="selected !== 4 ? selected = 4 : selected = null" class="w-full p-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50">
+                        <span>Welke types hoogwerkers zijn beschikbaar?</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" :class="{'rotate-180': selected == 4}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div x-show="selected == 4" class="p-4 pt-0 text-gray-600">
+                        <p>We bieden een complete vloot met schaarhoogwerkers, telescoophoogwerkers, spinhoogwerkers en booms. Werkhoogtes variëren van 6 tot 25 meter.</p>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <button @click="selected !== 5 ? selected = 5 : selected = null" class="w-full p-4 text-left font-semibold flex justify-between items-center hover:bg-gray-50">
+                        <span>Hoe werkt de levering en ophaling?</span>
+                        <svg class="w-6 h-6 transform transition-transform duration-300" :class="{'rotate-180': selected == 5}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div x-show="selected == 5" class="p-4 pt-0 text-gray-600">
+                        <p>We verzorgen transport in heel Amersfoort en omgeving. Levering en ophaling zijn mogelijk op alle werkdagen tussen 7:00 en 17:00 uur. Spoedlevering is mogelijk in overleg.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -130,11 +299,14 @@
     <section id="contact" class="py-24 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-8">Neem Contact Op</h2>
-                <p class="text-xl text-gray-600 mb-12">Heeft u vragen? Neem gerust contact met ons op.</p>
-                <a href="mailto:info@hoogwerkerhurenamersfoort.nl" class="text-blue-600 text-xl font-semibold hover:text-blue-700 transition-colors duration-300">
-                    info@hoogwerkerhurenamersfoort.nl
-                </a>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-8">Direct Contact</h2>
+                <p class="text-xl text-gray-600 mb-12">Heeft u vragen of wilt u een hoogwerker huren? Neem direct contact met ons op.</p>
+                <div class="space-y-4">
+                    <a href="mailto:info@hoogwerkerhurenamersfoort.nl" class="block text-blue-600 text-xl font-semibold hover:text-blue-700 transition-colors duration-300">
+                        info@hoogwerkerhurenamersfoort.nl
+                    </a>
+                    <p class="text-gray-600">Tel: <a href="tel:+31301234567" class="text-blue-600 hover:text-blue-700 transition-colors duration-300">030-123 45 67</a></p>
+                </div>
             </div>
         </div>
     </section>
@@ -142,21 +314,29 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Hoogwerker Huren Amersfoort</h3>
-                    <p class="text-gray-400">Professionele verhuurservice voor hoogwerkers in Amersfoort en omgeving.</p>
+                    <p class="text-gray-400">Uw betrouwbare partner voor hoogwerkerverhuur in Amersfoort en omgeving.</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Contact</h3>
                     <p class="text-gray-400">Email: info@hoogwerkerhurenamersfoort.nl</p>
+                    <p class="text-gray-400">Tel: 030-123 45 67</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Algemene Voorwaarden</a></li>
+                        <li><a href="https://laptoplifepro.github.io/hoogwerker-huren-amersfoort-2025-04-15-x1bes/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://laptoplifepro.github.io/hoogwerker-huren-amersfoort-2025-04-15-x1bes/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Algemene Voorwaarden</a></li>
+                        <li><a href="https://laptoplifepro.github.io/hoogwerker-huren-amersfoort-2025-04-15-x1bes/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Openingstijden</h3>
+                    <p class="text-gray-400">Ma-Vr: 07:00 - 17:00</p>
+                    <p class="text-gray-400">Za: Op afspraak</p>
+                    <p class="text-gray-400">24/7 Storingsdienst</p>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 text-center">
@@ -164,5 +344,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
